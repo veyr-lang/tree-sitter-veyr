@@ -1,0 +1,22 @@
+[
+  (argument_list)
+  (array_literal)
+  (block)
+  (enum_variant_block)
+  (field_declaration_block)
+  (generic_argument_list)
+  (impl_body)
+  (match_block)
+  (parameter_list)
+  (struct_literal_body)
+  (trait_body)
+  (type_argument_list)
+  (type_parameters)
+  (use_group)
+] @indent
+
+[
+  ")"
+  "]"
+  "}"
+] @outdent

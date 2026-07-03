@@ -1,0 +1,30 @@
+{
+	"$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+	"metadata": {
+		"version": "0.1.0",
+		"license": "MIT",
+		"description": "Tree-sitter grammar for Veyr",
+		"authors": [
+			{
+				"name": "Veyr contributors"
+			}
+		],
+		"links": {
+			"repository": "https://codeberg.org/veyr-lang/tree-sitter-veyr"
+		}
+	},
+	"grammars": [
+		{
+			"name": "veyr",
+			"camelcase": "Veyr",
+			"title": "Veyr",
+			"scope": "source.veyr",
+			"file-types": ["vyr"],
+			"injection-regex": "^veyr$",
+			"class-name": "TreeSitterVeyr",
+			"highlights": "queries/highlights.scm",
+			"locals": "queries/locals.scm",
+			"tags": "queries/tags.scm"
+		}
+	]
+}

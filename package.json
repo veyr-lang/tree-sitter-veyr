@@ -1,0 +1,44 @@
+{
+	"name": "tree-sitter-veyr",
+	"version": "0.1.0",
+	"description": "Tree-sitter grammar for Veyr",
+	"type": "commonjs",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@codeberg.org/veyr-lang/tree-sitter-veyr.git"
+	},
+	"bugs": {
+		"url": "https://codeberg.org/veyr-lang/tree-sitter-veyr/issues"
+	},
+	"homepage": "https://codeberg.org/veyr-lang/tree-sitter-veyr",
+	"keywords": [
+		"tree-sitter",
+		"parser",
+		"veyr"
+	],
+	"files": [
+		"grammar.js",
+		"queries",
+		"runtime",
+		"src",
+		"tree-sitter.json"
+	],
+	"scripts": {
+		"generate": "tree-sitter generate",
+		"test": "tree-sitter test",
+		"parse": "tree-sitter parse test/highlight/*.vyr"
+	},
+	"devDependencies": {
+		"tree-sitter-cli": "^0.26.0"
+	},
+	"tree-sitter": [
+		{
+			"scope": "source.veyr",
+			"file-types": [
+				"vyr"
+			],
+			"injection-regex": "^veyr$"
+		}
+	]
+}

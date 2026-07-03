@@ -1,0 +1,12 @@
+[[language]]
+name = "veyr"
+scope = "source.veyr"
+injection-regex = "veyr"
+file-types = ["vyr"]
+grammar = "veyr"
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "veyr"
+# Helix 25.07.1 requires an absolute path for local grammar builds.
+source = { path = "/absolute/path/to/tree-sitter-veyr" }
